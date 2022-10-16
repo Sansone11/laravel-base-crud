@@ -2,6 +2,11 @@
 
 lista fumetti
 @section('content')
+    <section>
+        <div class="input__container"style='display:flex;justify content;flex-end'>
+            <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
+        </div>
+    </section>
     <table>
         <thead>
             <th>title</th>
