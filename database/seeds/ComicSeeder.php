@@ -124,8 +124,6 @@ class ComicSeeder extends Seeder
             ],
         ];
 
-        // $comics = config('comics');
-
 
         foreach ($comics as $comic) {
             $c = new Comic();

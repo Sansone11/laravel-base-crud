@@ -1,11 +1,13 @@
-@extends('app')
+@extends('layout.app')
 
-@section('mataTitle', 'Movie')
+@section('mataTitle', 'Comics')
 
 @section('content')
 
-    <h1>ciaooo</h1>
-
+    
+<div class="container">
+    <h1>Benvenuti su Comics</h1>
+</div>
 
 
 @endsection
