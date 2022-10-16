@@ -13,19 +13,19 @@ lista fumetti
             <th>type</th>
         </thead>
         <tbody>
-            @foreach($comics as $c)
+            @foreach($comics as $comic)
             <tr>
                 <td>
-                   <a href="{{route('comics.show',$c)}}">
-                    {{$c->title}}
+                   <a href="{{route('comics.show',$comic)}}">
+                    {{$comic->title}}
                 </a>
                 </td>
-                <td>{{$c->description}}</td>
-                <td>{{$c->thumb}}</td>
-                <td>{{$c->price}}</td>
-                <td>{{$c->series}}</td>
-                <td>{{$c->sale_date}}</td>
-                <td>{{$c->type}}</td>
+                <td>{{$comic->description}}</td> 
+                <td>{{$comic->thumb}}</td>
+                <td>{{$comic->price}}</td>
+                <td>{{$comic->series}}</td>
+                <td>{{$comic->sale_date}}</td>
+                <td>{{$comic->type}}</td>
             </tr>
            @endforeach
         
