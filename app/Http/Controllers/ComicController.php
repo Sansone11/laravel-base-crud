@@ -37,6 +37,7 @@ class ComicController extends Controller
     {
        $userComic = $request->all();
         $c = Comic::create($userComic);
+        
         return redirect()->route('comics.show',$c);
     }
 
