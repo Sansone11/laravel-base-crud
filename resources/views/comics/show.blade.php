@@ -46,9 +46,10 @@
 
                         if (domanda == true) {
                             alert('fumetto cancellato');
-                            
+                            return true;
                         } else {
                             alert('Non hai cancellato');
+                            return false;
                         }
                     }
                 </script>
