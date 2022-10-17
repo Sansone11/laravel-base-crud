@@ -31,6 +31,10 @@
         
     </div>
 </div>
-
+<section>
+    <div>
+       <a href="{{route('comics.edit',$comic)}}">Modifica fumetto</a>  
+    </div>
+</section>
 
 @endsection

@@ -39,7 +39,7 @@ class ComicController extends Controller
         //  $c = Comic::create($userComic);
         $userComic = $request->validate([
             'title'=>'required|max:255',
-            'description'=>'required|max:255',
+            'description'=>'required',
             'thumb'=>'required|max:255|url',
             'price'=>'required|max:255',
             'series'=>'required|max:255',
@@ -47,7 +47,7 @@ class ComicController extends Controller
             'type'=>'required|max:255',
         ]);
         
-        return redirect()->route('comics.show',$c);
+        return redirect()->route('comics.show',$userComic);
     }
 
     /**
@@ -97,7 +97,7 @@ class ComicController extends Controller
     ]);
 
     $comic->update( $userComic);
-    return redirect('comics.show',$userComic);
+    return redirect()->route('comics.show',$comic);
        
     }
 

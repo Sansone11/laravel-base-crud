@@ -13,7 +13,7 @@
 
             @csrf
 
-            @method('POST');
+            @method('PUT')
 
             <p>
                 <label for="title">Titolo</label>
