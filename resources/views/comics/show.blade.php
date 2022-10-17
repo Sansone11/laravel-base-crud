@@ -33,7 +33,13 @@
 </div>
 <section>
     <div>
-       <a href="{{route('comics.edit',$comic)}}">Modifica fumetto</a>  
+       <a href="{{ route('comics.edit',$comic) }}">Modifica fumetto</a> 
+       <form action="{{ route('comics.destroy',$comic) }}" method="POST">
+        @csrf
+        @method('DELETE')
+        
+       </form>
+       <input type="submit" value="Elimina">  
     </div>
 </section>
 
