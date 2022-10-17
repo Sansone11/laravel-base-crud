@@ -40,7 +40,7 @@ class ComicController extends Controller
         $userComic = $request->validate([
             'title'=>'required|max:255',
             'description'=>'required|max:255',
-            'thumb'=>'required|max:255',
+            'thumb'=>'required|max:255|url',
             'price'=>'required|max:255',
             'series'=>'required|max:255',
             'sale_date'=>'nullable',
