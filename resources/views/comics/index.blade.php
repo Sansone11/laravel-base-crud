@@ -31,6 +31,7 @@ lista fumetti
                 <td>{{$comic->series}}</td>
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
+                <td><a href="{{route(' comics.edit',$comic)}}">Edit</a></td>
             </tr>
            @endforeach
         
