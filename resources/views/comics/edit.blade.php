@@ -9,7 +9,7 @@
         <h1>Crea un tuo fumetto</h1>
     </div>
     <div>
-        <form action="{{route('comics.update',$comic)}}"method="POST">
+        <form action="{{route('comics.update',$comic)}}" method="POST">
 
             @csrf
 
@@ -59,7 +59,7 @@
             </p>
             <p>
                 <label for="type">Tipo</label>
-                <input type="text"name="type" value=" {{old('type',$comic->)}}" id='type' placeholder="Inserisci un genere">
+                <input type="text"name="type" value=" {{old('type',$comic->type)}}" id='type' placeholder="Inserisci un genere">
                 @error('type')
                 <div class="alert alert-danger" style="color: red">{{$message}}</div>
             @enderror
